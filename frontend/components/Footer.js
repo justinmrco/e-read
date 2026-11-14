@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import Image from 'next/image';
+export default function Footer(){return <footer className="bg-neutral-900 text-gray-400 py-6 mt-10"><div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4"><Link href="/" className="flex items-center gap-3"><Image src="/logo.png" width={40} height={40} alt="" className="rounded-full" /><span className="text-xl font-bold text-yellow-500">E-Read</span></Link><p className="text-sm text-center">Academic bookstore demo / Sandbox payments / Shared sample reader</p><Link href="/admin" className="text-sm underline">Administrator login</Link></div></footer>;}

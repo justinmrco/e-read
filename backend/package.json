@@ -1,0 +1,32 @@
+{
+  "name": "e-read-backend",
+  "version": "1.0.0",
+  "description": "E-Read academic bookstore sandbox",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "node ../tests/security.cjs && node ../tests/passwords.cjs",
+    "test:payments": "node ../tests/payments.cjs",
+    "test:accounts": "node ../tests/accounts.cjs",
+    "test:admin": "node ../tests/admin.cjs",
+    "test:archive": "node ../tests/archive.cjs",
+    "start": "node server.js",
+    "create-admin": "node scripts/createAdmin.js",
+    "reconcile-payment": "node scripts/reconcilePayment.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "midtrans-client": "^1.4.2",
+    "mongoose": "^8.14.1"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}
